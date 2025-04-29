@@ -9,6 +9,7 @@ html,body{
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     overflow-y: auto;
+    background-color: silver;
 }
 section{
     height: 100vh;
@@ -20,6 +21,153 @@ section{
     font-weight: bold;
     font-size: 3rem;
 }
+.contenedor{
+    height:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+}
+.tarjeta{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 400px;
+    padding-top: 40px;
+}
+.descripcion{
+    height: 80px;
+    width: 50px;
+    opacity: 0;
+    transition: 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+.fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+input:checked+label .descripcion{
+    opacity: 1 !important;
+}
+.descripcion h4{
+    color: black;
+    font-size: 1.5rem;
+}
+.descripcion img{
+    width: 300px;
+    height: 300px;
+    border-radius: 2rem;
+    box-shadow: 0 50px 20px;
+    margin-left: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    display: none;
+}
+label{
+   width: 80px;
+    background-color: rgb(138, 224, 175);
+    display: flex;
+    align-items: end;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.contenedor-tenis{
+    height:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:15px;
+    font-size: 2rem;
+}
+.tarjeta-imagenes-tenis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    padding-top: 40px;
+    gap: 45px;
+}
+.informacion{
+    opacity: 1;
+    transition: 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.numeral{
+    color: white;
+    background-color: black;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 0 10px;
+}
+.producto1{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 300px;
+    padding-top: 5px;
+}
+.elemento{
+    height: 40px;
+    width: 350px;
+    opacity: 0;
+    transition: 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.modelo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.elemento p{
+    color: black;
+    font-size: 1rem;
+}
+.numeral-tenis{
+    color: white;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 2rem;
+    padding-left: 400px;
+}
+input:checked+label{
+    width: 60px;
+}
+input:checked+label .elemento{
+    opacity: 1 !important;
+}
 
 nav{
     background-color: rgb(255, 255, 255);
@@ -27,30 +175,73 @@ nav{
     border-radius: 1rem;
     color:white;
     position: fixed;
-    left:0px;
-    width:35%;
-    height: 100%;
+    height: 10%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 .section-uno{
-    padding-bottom: 400px;
-    padding-left: 500px;
-    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 3rem 5rem;
     text-align: center;
+}
+.presentacion{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-direction: column;
+}
+.presentacion img{
+    width: 300px;
+    height: 300px;
+    border-radius: 2rem;
+    box-shadow: 0 50px 20px;
+}
+.texto-presentacion{
+    opacity: 1;
+    transition: 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    gap: 1rem;
+    padding-top: 50px;
+}
+.presentacion h1{
+    color: black;
+    font-size: 3rem;
+}	
+.presentacion h2{
+    color: black;
+    background-color: seagreen;
+    font-size: 2rem;
+    border-radius: 2rem;
+}
+.presentacion p{
+    color: black;
+    font-size: 1.5rem;
 }
 nav a{
     color: black;
     background-color: rgb(48, 253, 253);
-    width: 450px;
-    padding: 1rem 3rem;
+    width: 150px;
+    padding: 1rem 1rem;
     border-radius: 1rem;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+    text-align: center;
 }
 nav h1{
     color: black;
@@ -58,4 +249,238 @@ nav h1{
 nav a:hover{
     background-color: black;
     color: azure;
+}
+.section-cuatro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 3rem 5rem;
+    text-align: center;
+    padding-top: 6rem;
+}
+.section-cuatro h4{
+    color: black;
+    font-size: 1.3rem;
+}
+.elemento-h{
+    height: 100px;
+    width: 50px;
+    opacity: 0;
+    transition: 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    text-align: center;
+    padding: 5px 5rem;
+    gap: 1rem;
+}
+.polera-h{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(138, 224, 175);
+}
+.numeral-uniforme{
+    font-size: 1.5rem;
+    padding-left: 5rem;
+    padding-top:2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-direction: row;
+    gap: 2rem;
+}
+input:checked+label{
+    width: 600px;
+}
+input:checked+label .elemento-h{
+    opacity: 1 !important;
+    font-size: 1.3rem;
+}
+
+.elemento-m{
+    height: 100px;
+    width: 50px;
+    opacity: 0;
+    transition: 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    text-align: center;
+    padding: 5px 5rem;
+    gap: 1rem;
+}
+.polera-m{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(138, 224, 175);
+}
+.numeral-uniforme{
+    font-size: 1.5rem;
+    padding-left: 5rem;
+    padding-top:2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input:checked+label .elemento-m{
+    opacity: 1 !important;
+    font-size: 1.3rem;
+}
+
+input:checked+label .elemento-i{
+    opacity: 1 !important;
+    width: 700px;
+    font-size: 10px;
+}
+input:checked+label .elemento-i2{
+    opacity: 1 !important;
+    width: 700px;
+    font-size: 10px;
+}
+input:checked+label .numeral-indumentaria{
+    opacity: 1 !important;
+}
+.elemento-i2{
+    height: 200px;
+    width: 700px;
+    opacity: 0;
+    transition: 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    text-align: center;
+    gap: 1rem;padding-left: 5rem;
+    padding-right: 20rem;
+}
+.elemento-i{
+    height: 200px;
+    width: 700px;
+    opacity: 0;
+    transition: 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    text-align: center;
+    gap: 1rem;
+    padding-left: 3rem;
+    padding-right: 22rem;
+}
+.indumentaria-i{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(138, 224, 175);
+}.indumentaria-i2{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(138, 224, 175);
+}
+.numeral-indumentaria{
+    padding-top: 5rem;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    opacity:0 ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input:checked+label .elemento-i{
+    opacity: 1 !important;
+    font-size: 1.3rem;
+}
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-direction: row;
+    gap: 2rem;
+}
+.section-cinco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 3rem 5rem;
+    text-align: center;
+    padding-top: 6rem;
+}
+.section-cinco h4{
+    color: black;
+    font-size: 1.3rem;
+}
+.section-cinco p{
+    color: black;
+    font-size: 15px;
+}
+.numeral-indumentaria2{
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    opacity:0 ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input:checked+label .numeral-indumentaria2{
+    opacity: 1 !important;
+}
+.ubicacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap:5rem;
+    width: 100%;
+    height: 30%;
+    padding-top: 10rem;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding-bottom: 9rem;
+}
+.ubicacion h1{
+    color: rgb(248, 248, 248);
+    font-size: 2rem;
+}
+.ubicacion p{
+    color: white;
+    font-size: 1rem;
+}
+.ubicacion h2{
+    color: white;
+    font-size: 1.5rem;
+}
+.ubicacion a{
+    text-decoration: none;
+    color: white;
+}
+.section-seis{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 6rem;
 }

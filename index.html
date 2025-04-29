@@ -1,31 +1,220 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
     <nav>
-        <h1>INICIO</h1>
-        <a href="#section-dos">Productos a la venta</a>
+        <a href="#section-uno">Inicio</a>
+        <a href="#section-dos">Productos</a>
         <a href="#section-tres">Tenis</a>
-        <a href="#section-cuatro">Polera</a>
-        <a href="#section-cinco">Corto</a>
-        <a href="#section-seis">Rodilleras</a>
-        <a href="#section-siete">Ligas</a>
-        <a href="#section-ocho">Instrumentos de entrenamientos</a>
+        <a href="#section-cuatro">Uniforme</a>
+        <a href="#section-cinco">Indumentaria</a>
+        <a href="#section-seis">Ubicacion</a>
     </nav>
-    <section class="section-uno">
-        <h1>INDUMENTARIA DEPORTIVA DEL VOLEIBOL</h1>
+    <section id="section-uno" class="section-uno">
+        <div class="presentacion">
+            <h1>INDUMENTARIA DEPORTIVA DEL VOLEIBOL</h1>
+            <img src="logo.jpg" width="250" height="200" alt="Logo de la tienda">
+            <div class="texto-presentacion">
+                <h2>Bienvenido a nuestra tienda de indumentaria deportiva</h2>
+                <p>Ofrecemos una amplia variedad de productos para el voleibol, desde uniformes hasta accesorios.</p>
+                <p>¡Explora nuestra colección y encuentra lo que necesitas!</p>
+                <p>Contamos con productos de alta calidad y marcas reconocidas.</p>
+            </div>
     </section>
-    <section id="seccion-dos"class="section-dos">PRODUCTOS A LA VENTA</section>
-    <section id="seccion-tres"class="section-tres">TENIS</section>
-    <section id="seccion-cuatro"class="section-cuatro">RODILLERAS</section>
-    <section id="seccion-cinco"class="section-cinco">UNIFORME FEMENINO</section>
-    <section id="seccion-seis"class="section-seis">INSTRUMENTO DE ENTRENAMIENTO</section>
-    <section id="seccion-siete"class="section-siete">COMPRAS</section>
-    <section id="seccion-ocho"class="section-ocho">UBICACION</section>
+    <section id="section-dos" class="section-dos">
+        <h1>PRODUCTOS</h1>
+        <div class="contenedor">
+            <input type="radio" name="opciones" id="op1">
+            <label for="op1">
+                <div class="tarjeta">
+                    <div class="fila">
+                        <div class="numeral">1</div>
+                        <div class="descripcion">
+                            <h4>Tenis</h4>
+                            <img src="tenis.jpg" width="250" height="200">
+                        </div>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="opciones" id="op2">
+            <label for="op2">
+                <div class="tarjeta">
+                    <div class="fila">
+                        <div class="numeral">2</div>
+                        <div class="descripcion">
+                            <h4>Uniformes</h4>
+                            <img src="uniforme.jpg" width="250" height="200">
+                        </div>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="opciones" id="op3">
+            <label for="op3">
+                <div class="tarjeta">
+                    <div class="fila">
+                        <div class="numeral">3</div>
+                        <div class="descripcion">
+                            <h4>Indumentaria</h4>
+                            <img src="indumentaria.jpg" width="250" height="200">
+                        </div>
+                    </div>
+                </div>
+            </label>
+    </section>
+    <section id="section-tres" class="section-tres">
+        <h1>TENIS</h1>
+        <div class="contenedor-tenis">
+            <div class="tarjeta-imagenes-tenis">
+                <img src="tenis.jpg" width="250" height="200">
+                <img src="tenis2.jpg" width="250" height="200">
+                <img src="tenis3.jpg" width="250" height="200">
+            </div>
+            <div class="informacion">
+                <input type="radio" name="opciones" id="tenis1">
+                <label for="tenis1">
+                    <div class="producto1">
+                        <div class="modelo">
+                            <div class="numeral-tenis">1</div>
+                            <div class="elemento">
+                                <p><b>Talla</b>:39 eur</p>
+                                <p><b>Precio</b>:390 Bs</p>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+
+                <input type="radio" name="opciones" id="tenis2">
+                <label for="tenis2">
+                    <div class="producto1">
+                        <div class="modelo">
+                            <div class="numeral-tenis">2</div>
+                            <div class="elemento">
+                                <p><b>Talla</b>:39 eur</p>
+                                <p><b>Precio</b>:390 Bs</p>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+
+                <input type="radio" name="opciones" id="tenis3">
+                <label for="tenis3">
+                    <div class="producto1">
+                        <div class="modelo">
+                            <div class="numeral-tenis">3</div>
+                            <div class="elemento">
+                                <p><b>Talla</b>:39 eur</p>
+                                <p><b>Precio</b>:390 Bs</p>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+    </section>
+    <section id="section-cuatro" class="section-cuatro">
+        <div class="polera-hombre">
+            <div class="encabezado">
+                <div class="polera-hombre-e">
+                    <h4>Uniforme hombre</h4>
+                    <img src="uniforme.jpg" width="250" height="250">
+                </div>
+                <input type="radio" name="opciones" id="uniforme1">
+                <label for="uniforme1">
+                    <div class="producto2">
+                        <div class="polera-h">
+                            <div class="numeral-uniforme">  INFORMACIÓN</div>
+                            <div class="elemento-h">
+                                <p><b>Talla:</b>S-M-L-XL-XXL</p>
+                                <p><b>Precio:</b>90 Bs</p>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div class="polera-mujer">
+                <div class="encabezado ">
+                    <div class="polera-mujer-e">
+                        <h4>Uniforme mujer</h4>
+                        <img src="uniforme2.jpg" width="250" height="250">
+                    </div>
+                    <input type="radio" name="opciones" id="uniforme2">
+                    <label for="uniforme2">
+                        <div class="producto2">
+                            <div class="polera-m">
+                                <div class="numeral-uniforme">INFORMACIÓN</div>
+                                <div class="elemento-m">
+                                    <p><b>Talla:</b>S-M-L-XL-XXL</p>
+                                    <p><b>Precio:</b>90 Bs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+    </section>
+    <section id="section-cinco" class="section-cinco">INDUMENTARIA
+        <div class="indumentaria">
+            <div class="encabezado">
+                <div class="indumentaria-e">
+                    <img src="indumentaria.jpg" width="250" height="250">
+                </div>
+                <input type="radio" name="opciones" id="indumentaria1">
+                <label for="indumentaria1">
+                    <div class="producto3">
+                        <div class="indumentaria-i">
+                            <div class="numeral-indumentaria">INFORMACIÓN</div>
+                            <div class="elemento-i">
+                                <p>Las ligas de calentamiento en el voleibol tienen varios propósitos importantes para los jugadores. Estas son herramientas populares para preparar los músculos y prevenir lesiones. Entre sus beneficios principales se encuentran:
+                                    - Activación muscular.
+                                    - Mejorar la flexibilidad.
+                                    - Prevención de lesiones.
+                                    - Aumento de la fuerza.</p>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="indumentaria2">
+            <div class="encabezado">
+                <div class="indumentaria2-e">
+                    <h4>Otros</h4>
+                    <img src="indumentaria2.jpg" width="300" height="250">
+                </div>
+                <input type="radio" name="opciones" id="indumentaria2">
+                <label for="indumentaria2">
+                    <div class="producto3">
+                        <div class="indumentaria-i2">
+                            <div class="numeral-indumentaria2">INFORMACIÓN</div>
+                            <div class="elemento-i2">
+                                <p>Balones, rodilleras, conos, mochilas, etc. <a href="#section-seis">Mas información </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+    </section>
+    <section id="section-seis" class="section-seis">
+        <div class="vacio"></div>
+        <div class="ubicacion">
+            <div class="ubi"><h1>Ubicación de la tienda</h1>
+                <p>Estamos ubicados en la Av. 6 de agosto, La Paz, Bolivia.</p></div>
+            <div class="referencia"><h2>Referencias</h2>
+                <p>Teléfono: 123456789</p>
+                <p>Email:oreox@gmail.com</p>
+                <p>Horario: Lunes a Viernes de 9:00 a 18:00</p></div>
+            <div class="seguir"><h2>Siguenos en:</h2>
+                <p><a href="https://www.facebook.com/oreox">Facebook</a></p>
+                <p><a href="https://www.instagram.com/oreox">Instagram</a></p>
+                <p><a href="https://www.tik tok.com/oreox">Tik tok</a></p></div>
+    </section>
+
 </body>
+
 </html>
